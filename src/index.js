@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-
+import TodoList from './TodoList';
+import Coin from './Coin';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TodoList />
+    <Coin />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-

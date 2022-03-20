@@ -1,8 +1,8 @@
 import Button from './Button';
-import styles from './App.module.css';
+import styles from './TodoList.module.css';
 import { useEffect, useState } from 'react';
 
-function App() {
+function TodoList() {
   const [toDo, setToDo] = useState('');
   const [toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
@@ -15,7 +15,6 @@ function App() {
     //input 내용 비워주기
     setToDo('');
   };
-  console.log(toDos);
 
   return (
     <div>
@@ -38,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default TodoList;
