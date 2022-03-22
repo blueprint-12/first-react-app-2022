@@ -1,5 +1,3 @@
-import Button from './Button';
-import styles from './TodoList.module.css';
 import { useEffect, useState } from 'react';
 
 function TodoList() {
