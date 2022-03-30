@@ -1,10 +1,12 @@
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Detail from './routes/Detail';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/hello">
           <h1>Hello</h1>
@@ -16,7 +18,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 export default App;

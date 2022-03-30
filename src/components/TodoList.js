@@ -1,4 +1,6 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
+import styles from '../components/TodoList.module.css';
 
 function TodoList() {
   const [toDo, setToDo] = useState('');
@@ -16,7 +18,7 @@ function TodoList() {
 
   return (
     <div>
-      <h1>My To Dos ({toDos.length})</h1>
+      <h1 className={styles.title}>My To Dos ({toDos.length})</h1>
       <form onSubmit={onSubmit}>
         <input
           onChange={onChange}
